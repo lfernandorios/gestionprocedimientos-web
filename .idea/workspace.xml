@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6336bfa5-8e3c-457b-a4eb-c80433dbf7bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/modules/personas/personas.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/personas/persona.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/personas/persona.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/services/personas/persona.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layouts/default/default.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/default/default.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/modules/dashboard.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/dashboard.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/modules/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/dashboard/dashboard.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/modules/personas/posts.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/modules/personas/posts.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/personas/personas.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/modules/personas/posts.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/personas/personas.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/modules/personas/posts.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/personas/personas.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/modules/procedimientos/articles.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/procedimientos/procedimientos.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/modules/procedimientos/articles.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/procedimientos/procedimientos.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/modules/procedimientos/articles.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/procedimientos/procedimientos.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/modules/procedimientos/articles.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/procedimientos/procedimientos.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/components/sidebar/sidebar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/components/sidebar/sidebar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/widgets/area/area.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/widgets/area/area.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/modules/personas/personas.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/modules/personas/personas.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +36,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-    <property name="ts.external.directory.path" value="D:\CODE\UDEA\ANALISIS DE SISTEMAS 2\gestionprocedimientos-web\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="D:\CODE\UDEA\ANALISIS DE SISTEMAS 2\gp-web\node_modules\typescript\lib" />
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
     <configuration name="Tests" type="JavaScriptTestRunnerKarma">
@@ -101,6 +86,7 @@
       <workItem from="1588105989362" duration="43461000" />
       <workItem from="1588553783274" duration="5773000" />
       <workItem from="1588804899381" duration="3655000" />
+      <workItem from="1589081456102" duration="2399000" />
     </task>
     <servers />
   </component>
@@ -117,22 +103,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1588110495877" />
-    <state width="1345" height="131" key="GridCell.Tab.0.bottom" timestamp="1588804871038">
+    <state width="1345" height="131" key="GridCell.Tab.0.bottom" timestamp="1589082599956">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="131" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588804871038" />
-    <state width="1345" height="131" key="GridCell.Tab.0.center" timestamp="1588804871037">
+    <state width="1345" height="131" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589082599956" />
+    <state width="1345" height="131" key="GridCell.Tab.0.center" timestamp="1589082599956">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="131" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588804871037" />
-    <state width="1345" height="131" key="GridCell.Tab.0.left" timestamp="1588804871037">
+    <state width="1345" height="131" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1589082599956" />
+    <state width="1345" height="131" key="GridCell.Tab.0.left" timestamp="1589082599956">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="131" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588804871037" />
-    <state width="1345" height="131" key="GridCell.Tab.0.right" timestamp="1588804871037">
+    <state width="1345" height="131" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1589082599956" />
+    <state width="1345" height="131" key="GridCell.Tab.0.right" timestamp="1589082599956">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="131" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588804871037" />
+    <state width="1345" height="131" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589082599956" />
     <state x="263" y="99" key="IDE.errors.dialog" timestamp="1588105907209">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -145,5 +131,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1588110341064" />
+    <state x="546" y="249" width="350" height="298" key="org.angular.cli.generate" timestamp="1589083277156">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="546" y="249" width="350" height="298" key="org.angular.cli.generate/0.0.1366.728@0.0.1366.728" timestamp="1589083277156" />
   </component>
 </project>

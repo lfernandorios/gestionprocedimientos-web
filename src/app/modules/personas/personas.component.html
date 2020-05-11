@@ -1,11 +1,97 @@
-<div>
-  <div>encabezado personas</div>
-  <div>filtro</div>
-  <div>
-    <div>boton add </div>
-    <div><table>
+<div class="container">
 
-    </table></div>
-    <div>page</div>
-  </div>
+    <form #personForm="ngForm" appIdentityRevealed (ngSubmit)="onSubmit()">
+        <div [hidden]="personForm.submitted">
+            <div class="cross-validation">
+                <div class="form-group">
+                    <label for="tipoDocumento">tipoDocumento</label>
+                    <input id="tipoDocumento" name="tipoDocumento" class="form-control" [(ngModel)]="persona.tipoDocumento"
+                        #tipoDocumento="ngModel">
+
+                    <div *ngIf="tipoDocumento.invalid && tipoDocumento.touched" class="alert alert-danger">
+
+                        <div *ngIf="tipoDocumento.errors.required">
+                            El tipoDocumento es requerido
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="documento">documento:</label>
+                    <input type="text" class="form-control" id="documento" required [(ngModel)]="persona.documento"
+                        name="documento" #documento="ngModel">
+
+                    <div *ngIf="documento.invalid && documento.touched" class="alert alert-danger">
+
+                        <div *ngIf="documento.errors.required">
+                            El documento es requerido
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="nombre">nombre:</label>
+                    <input type="text" class="form-control" id="nombre" required [(ngModel)]="persona.nombre"
+                        name="nombre" #nombre="ngModel">
+                        
+                        <div *ngIf="nombre.invalid && nombre.touched" class="alert alert-danger">
+
+                            <div *ngIf="nombre.errors.required">
+                                El nombre es requerido
+                            </div>
+                        </div>   
+
+                </div>
+
+                <div class="form-group">
+                    <label for="apellidos">apellidos:</label>
+                    <input type="text" class="form-control" id="apellidos" required [(ngModel)]="persona.apellidos"
+                        name="apellidos" #apellidos="ngModel">
+
+                    <div *ngIf="apellidos.invalid && apellidos.touched" class="alert alert-danger">
+
+                        <div *ngIf="apellidos.errors.required">
+                            Los apellidos es requerido
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="sexo">sexo:</label>
+                    <input type="text" class="form-control" id="sexo" required
+                        [(ngModel)]="persona.sexo" name="sexo" #sexo="ngModel">
+
+                    <div *ngIf="sexo.invalid && sexo.touched" class="alert alert-danger">
+
+                        <div *ngIf="sexo.errors.required">
+                            El sexo de creación es obligatoria
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                    <input type="date" class="form-control" id="fechaNacimiento" [(ngModel)]="persona.fechaNacimiento"
+                        name="fechaNacimiento" #fechaNacimiento="ngModel">
+                        <div *ngIf="fechaNacimiento.invalid && fechaNacimiento.touched" class="alert alert-danger">
+
+                            <div *ngIf="fechaNacimiento.errors.required">
+                                La fecha de nacimiento es obligatoria
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+
+            <button type="submit" class="btn btn-default" [disabled]="personForm.invalid">Crear Persona</button>
+            <button type="button" class="btn btn-default" (click)="personForm.resetForm({})">Reset</button>
+        </div>
+
+        <div class="submitted-message" *ngIf="personForm.submitted">
+            <p>{{errorServer}}</p>
+            <button (click)="personForm.resetForm({})">Crear Persona</button>
+        </div>
+
+    </form>
 </div>

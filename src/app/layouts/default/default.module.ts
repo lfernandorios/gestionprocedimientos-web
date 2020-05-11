@@ -16,16 +16,17 @@ import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-
-
+import {HttpClientModule} from '@angular/common/http';
+import {MessagesComponent} from '../../modules/messages/messages.component';
+import {ProcedimientoService} from '../../services/procedimientos/procedimiento.service';
 
 @NgModule({
   declarations: [
     DefaultComponent,
     DashboardComponent,
     PersonasComponent,
-    ProcedimientosComponent
-
+    ProcedimientosComponent,
+    MessagesComponent
   ],
   imports: [
     CommonModule,
@@ -39,10 +40,12 @@ import {MatInputModule} from '@angular/material/input';
     MatTableModule,
     MatSortModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    HttpClientModule
   ],
   providers: [
-    DashboardService
+    DashboardService,
+    ProcedimientoService
   ]
 })
 export class DefaultModule { }

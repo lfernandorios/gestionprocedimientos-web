@@ -1,1 +1,46 @@
-<p>procedimientos works!</p>
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+  <div fxFlex="90">
+
+    <h1 matSubheader>Procedimientos Quirúrgicos</h1>
+
+    <mat-form-field>
+      <mat-label>Filtro</mat-label>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Quirúrgico">
+    </mat-form-field>
+
+    <div class="mat-elevation-z8">
+      <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Id. </th>
+          <td mat-cell *matCellDef="let procedimientos"> {{procedimientos.id}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="nombre">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Nombre </th>
+          <td mat-cell *matCellDef="let procedimientos"> {{procedimientos.nombre}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="certificacion">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Certificacion </th>
+          <td mat-cell *matCellDef="let procedimientos"> {{procedimientos.certificacion}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="vigencia">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Vigencia </th>
+          <td mat-cell *matCellDef="let procedimientos"> {{procedimientos.vigencia}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="estado">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Estado </th>
+          <td mat-cell *matCellDef="let procedimientos"> {{procedimientos.estado}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+
+      <mat-paginator [pageSizeOptions]="[10, 20, 50]" showFirstLastButtons></mat-paginator>
+    </div>
+  </div>
+</div>
